@@ -3,7 +3,6 @@ import UseFetch from "./components/UseFetch";
 
 function App() {
   const { loading, data } = UseFetch();
-  console.log(data);
   return (
     <main>
       <div className="section-title">
