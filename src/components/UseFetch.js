@@ -11,8 +11,8 @@ const UseFetch = () => {
   const getProducts = async () => {
     const response = await fetch(url);
     const data = await response.json();
-    paginate(data);
-    setData(data);
+
+    setData(paginate(data));
     setLoading(false);
   };
   useEffect(() => {
